@@ -28,3 +28,17 @@ function showSlides(isSetTimeout, nextSlide) {
     }, 8000)
   }
 }
+
+var $content = $('.menu-content');
+
+function showContent(selector) {
+  $content.hide();
+  $(selector).show();
+}
+
+$('.menu').on('click', '.menu-btn', function(e) {
+  showContent(e.currentTarget.hash);
+  e.preventDefault();
+}); 
+
+showContent('#home');

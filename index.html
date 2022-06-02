@@ -12,80 +12,527 @@
     <link rel="icon" href="images\logo_transparent.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?famliy=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
-    <div class="main">
+    <div class="menu">
         <nav class="navigation">
-            <div class="nav-home"><a href="/" style="outline: none;"><img src="images\logo_with_name_2.jpg"></a></div>
+            <div class="nav-home">
+                <a href="#home" class="menu-btn" id="menu_home" style="outline: none;">
+                    <img src="images\logo_with_name_2.jpg">
+                </a>
+            </div>
             <ul>
-                <li> <a href="#" class="menu_news"></a> </li>
-                <li> <a href="#" class="menu_cds"></a></li>
-                <li> <a href="#" class="menu_works"></a></li>
-                <li> <a href="#" class="menu_about"></a></li>
-                <li> <a href="#" class="menu_contact"></a></li>
+                <li> <a href="#news" class="menu-btn" id="menu_news"></a></li>
+                <li> <a href="#cds" class="menu-btn" id="menu_cds"></a></li>
+                <li> <a href="#works" class="menu-btn" id="menu_works"></a></li>
+                <li> <a href="#about" class="menu-btn" id="menu_about"></a></li>
+                <li> <a href="#contact" class="menu-btn" id="menu_contact"></a></li>
             </ul>
         </nav>
     </div>
 
-
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div id="home" class="menu-content">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 8</div>
             <img src="images\slide_1_usableness_portfolio.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 8</div>
             <img src="images\slide_2_Bakla_island.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 8</div>
             <img src="images\slide_3_summerwork.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">4 / 8</div>
             <img src="images\slide_4_usableness_portfolio.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">5 / 8</div>
             <img src="images\slide_5_Bakla_island.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">6 / 8</div>
             <img src="images\slide_6_usableness_portfolio.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">7 / 8</div>
             <img src="images\slide_7_usableness_portfolio.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">8 / 8</div>
             <img src="images\slide_8_usableness_portfolio.jpg"
-                style="visibility: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
+                style="visibliity: visible; max-height: none; height: 100%; width: 100%; overflow: hidden;">
         </div>
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
-    <br>
+
+    <div id="about" class="menu-content">
+        <ul id="about_list">
+            <li id="about_image">
+                <img src="images\self_portrait.jpg" alt="Petr Bakla" height="333" width="500" alt="Image"
+                    loading="lazy">
+                <h5>
+                    Photo by: Karel Šuster
+                </h5>
+            </li>
+            <li>
+                <h4>EN</h3>
+                    <p>
+                        Born in 1980 in Prague, Petr Bakla often employs basic pitch-based material (typically the
+                        chromatic
+                        and the whole-tone scales) in his compositions. He is interested in constructing situations and
+                        structural contexts in which these frugal musical elements can acquire a unique expressiveness
+                        and
+                        energy. A frequent feature of Bakla's work is a simultaneous course of two musical/sound layers
+                        which, although usually markedly differing in dynamics to allow for a sense of "figure and
+                        background", are not mutually subordinating - they are of equal importance, their "friction"
+                        creating specific tension and ambiguity.
+                    </p>
+                    <p>
+                        Bakla's music has been performed in Austria, the Czech Republic, France, Germany, Italy, the
+                        Netherlands, Poland, Spain, Switzerland, Armenia, Ukraine and the United States (NYC, Boston,
+                        San
+                        Diego ao), in many cases commissioned and/or performed by distinguished musicians. Of special
+                        importance has been the collaboration with the Ostrava Center for New Music.
+                    </p>
+                    <p>
+                        Petr Bakla studied music at the Academy of Performing Arts in Prague, took part in several
+                        composition courses and workshops home and abroad and was awarded scholarships and residencies.
+                        He is self-taught.
+                    </p>
+            </li>
+            <li>
+                <h4>CZ</h4>
+                <p>
+                    Petr Bakla se narodli v roce 1980 v Praze. Ve svých skladbách často využívá základních,
+                    schematizovaných hudebních útvarů, zejména chromatické a celotónové stupnice. Zajímají ho
+                    situace a
+                    souvislosti, v nichž tento úsporný materiál nabývá zvláštní expresivity a energie. Obvyklým
+                    rysem
+                    Baklových skladeb je také práce se simultánním průběhem dvou zvukových vrstev, které, ač
+                    zpravidla
+                    dynamicky výrazně odlišené na způsob "figury a pozadí", nejsou ve vztahu vzájemné podřízenosti –
+                    jsou rovnocenně důležité a společně generují specifické napětí a pocit nejednoznačnosti.
+                </p>
+                <p>
+                    Baklovy skladby byly uvedeny v ČR, Německu, Rakousku, Švýcarsku, Španělsku, Itálii, Francii,
+                    Polsku,
+                    Nizozemí, USA (New York, Boston, San Diego ad.), v Arménii či na Ukrajině, často v podání
+                    renomovaných interpretů a na jejich objednávku. Zvláštní důležitost má spolupráce s Ostravským
+                    centrem nové hudby.
+                </p>
+                <p>
+                    Petr Bakla studoval na Akademii múzických umění v Praze, zúčastnli se skladatelských kurzů a
+                    workshopů doma i v zahraničí, byla mu udělena stipendia a tvůrčí pobyty.
+                    Je samoukem.
+                </p>
+                <p>
+                    Magisterská diplomka K melodickému aspektu soudobé hudby
+                    (jen česky, anglický abstrakt)
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="works" class="menu-content">
+        <ul>
+            <li>
+                <p>Piano Concerto No. 2 (2021) for piano and 8 instruments
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Portfolio pf solo (2010/2019-20)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>My way pf solo (2019/20)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>There is an island above the city for orchestra (2018)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Elsewhere for ensemble (2017)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Last piece (Mostly stepwise) cl/bcl, vlc, pf (2017)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>String Trio no. 2 (2017)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Two Instances vlc, pf (2016)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Summer Work for large ensemble (2016)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Major thirds for piano quintet (2016)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>String quartet no. 2 (2016)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Simple constellations pf solo (2015)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Classical blend / Weihnachtsoratorium for orchestra (2014/15)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>I am standing on a hlil pf solo (2014)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Something with something else I vln solo (2014)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Something with something else II vla solo (2014)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Something with something else III vlc solo (2014)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Dog Variations vln, vlc, pf (2013)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>September 2 vln (2013)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>No.4 pf solo (2013)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Wind Quintet No.2 (2013)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Usableness of the list
+                    ("Providing more evidence to prove the list's usableness is perhaps not necessary.")
+                    pf solo (2013)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>String Quartet (2012)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>First movement and variations pf solo (2012)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Piano Concerto pf and ensemble (2010-2012)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Three Instances vln, pf (2011)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Shift fl, e.h./ob, bcl, perc (2011)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Statements? soprano, fl, tp, tbn, vcl, perc, pf (2011)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Serenade ensemble 12 musicians (2010)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>First comes the obvious opening gesture, but then the plot thickens, and the sweet background music
+                    is not
+                    what really matters here a.sax, perc, pf, soundtrack (2010)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+
+            <li>
+                <p>Material and Dreams ensemble 17 musicians (2009)
+                    [<a href="" target="_blank">pdf</a>]
+                    [<a href="" target="_blank">mp3</a>]
+                    [<a href="" target="_blank">info</a>]
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="news" class="menu-content">
+        <ul class="news_years1">
+            <li>
+                2022
+                <ul>
+                    <li>
+                        <u>April 26th & 28th</u>
+                        <p>
+                            Two instances premiered by Andrej Gál and Daan Vandewalle
+                            on the occasion of Petr Kotík's 80th birthday
+                            PLATO Ostrava (26th), DOX+ Prague (28th)
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                2021
+                <ul>
+                    <li>
+                        <u>December 22nd</u>
+                        <p>
+                            There is an island above the city for orchestra on CD!
+                            performed by Prague Radio Symphony Orchestra & Peter Rundel
+                            part of Ostrava Days Live 2019-2021
+                        </p>
+                    </li>
+                    <li>
+                        <u>October 14th</u>
+                        <p>
+                            New album (CD and digital download) released on Octopus Press!
+                            Usableness of the list / Portfolio
+                            Miroslav Beinhauer, piano
+                            available from the publisher or on Bandcamp
+                        </p>
+                    </li>
+                    <li>
+                        <u>August 26th</u>
+                        <p>
+                            Piano Concerto No. 2
+                            premiered by Miroslav Beinhauer & Ostravská banda conducted by Bruno Ferrandis
+                            Ostrava Days Festival, Ostrava, CZ
+                        </p>
+                    </li>
+                    <li>
+                        <u>June 11th</u>
+                        <p>
+                            Dog Variations performed by Neues Klaviertrio Dresden
+                            Hygiene-Museum Dresden, Germany
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                2020
+                <ul>
+                    <li>
+                        Saw a couple of fine on-line events, and 5 remarkable studio productions:
+                        No. 4, Portfolio, Usableness of the List, Simple Constellations and May Way
+                        have been recorded by the amazing Miroslav Beinhauer. Stay tuned!
+                    </li>
+                </ul>
+            </li>
+            <li>
+                2019
+                <ul>
+                    <li>
+                        <u>November</u>
+                        <p>
+                            Summer Work now available on CD!
+                        </p>
+                    </li>
+                    <li>
+                        <u>August 31st</u>
+                        <p> There is an island above the city
+                            premiered by the Prague Radio Symphony Orchestra cond. by Peter Rundel
+                        </p>
+                    </li>
+                    <li>
+                        <u>August 28th</u>
+                        <p>No. 4 premiered by Miroslav Beinhauer
+                            Ostrava Days Festival, Ostrava, CZ
+                        </p>
+                    </li>
+                    <li>
+                        <u>May 20th</u>
+                        <p>My Way (1st version) premiered by Ivan Siller
+                            Dvorana VŠMU, Bratislava, Slovakia
+                        </p>
+                    </li>
+                    <li>
+                        January 11th
+                        String trio no. 2 performed by ensemble recherche
+                        Mannheim Gesellschaft für Neue Musik, Germany
+                    </li>
+                </ul>
+            </li>
+            <li>
+                2018
+                <ul>
+                    <li>
+                        <u>December 15th</u>
+                        <p>Matthias Lorenz plays Something with something else III
+                            Am Kirchberg 27, Frankfurt/Main, Germany
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
 </body>
+
+<footer>
+    <ul id="footer_icons">
+        <li><a href><img class="follow_img" src="images/icon_facebook.png" height="50" width="50"></a></li>
+        <li><a href><img class="follow_img" src="images/icon_instagram.png" height="50" width="50"></a></li>
+        <li><a href><img class="follow_img" src="images/icon_twitter.png" height="50" width="50"></a></li>
+        <li><a href><img class="follow_img" src="images/icon_youtube.png" height="50" width="50"></a></li>
+        <li><a href><img class="follow_img" src="images/icon_spotify.png" height="50" width="50"></a></li>
+    </ul>
+</footer>
