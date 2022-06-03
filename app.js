@@ -14,12 +14,9 @@ function showSlides(isSetTimeout, nextSlide) {
   currentSlideIndex += nextSlide;
   if (currentSlideIndex > slides.length - 1) { currentSlideIndex = 0 }
   if (currentSlideIndex < 0) {
-    console.log(currentSlideIndex)
-    currentSlideIndex = slides.length - Math.abs(currentSlideIndex) % slides.length 
-    console.log(currentSlideIndex)
+    currentSlideIndex = slides.length - Math.abs(currentSlideIndex) % slides.length
   }
 
-  console.log(currentSlideIndex)
   slides[currentSlideIndex].style.display = "block";
 
   if (isSetTimeout == true) {
@@ -29,16 +26,16 @@ function showSlides(isSetTimeout, nextSlide) {
   }
 }
 
-var $content = $('.menu-content');
+var $content = $('.body_content');
 
 function showContent(selector) {
   $content.hide();
   $(selector).show();
 }
 
-$('.menu').on('click', '.menu-btn', function(e) {
+$('.menu').on('click', '.menu-btn', function (e) {
   showContent(e.currentTarget.hash);
   e.preventDefault();
-}); 
+});
 
 showContent('#home');
