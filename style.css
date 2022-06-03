@@ -367,42 +367,42 @@ a:hover {
 
 .clipped-border:nth-child(1) {
     top: 0px;
-    left: 800px;
+    left: 755px;
 }
 
 .clipped-border:nth-child(2) {
     top: 0px;
-    left: 1033px;
+    left: 990px;
 }
 
 .clipped-border:nth-child(3) {
     top: 0;
-    left: 1266px;
+    left: 1225px;
 }
 
 .clipped-border:nth-child(4) {
     top: 196px;
-    left: 916px;
+    left: 873px;
 }
 
 .clipped-border:nth-child(5) {
     top: 196px;
-    left: 1149px;
+    left: 1106px;
 }
 
 .clipped-border:nth-child(6) {
     top: 392px;
-    left: 800px;
+    left: 755px;
 }
 
 .clipped-border:nth-child(7) {
     top: 392px;
-    left: 1033px;
+    left: 990px;
 }
 
 .clipped-border:nth-child(8) {
     top: 392px;
-    left: 1266px;
+    left: 1225px;
 }
 
 #clipped {
@@ -529,6 +529,7 @@ a:hover {
     justify-content: center;
     flex-direction: row;
     list-style: none;
+    padding: 0px;
 }
 
 #footer_icons>li {
